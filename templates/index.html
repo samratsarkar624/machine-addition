@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Machine Addition</title>
+</head>
+
+<body>
+
+    <h1>Teach a Machine to Add</h1>
+
+    <form method="POST">
+
+        <input
+            type="number"
+            name="number1"
+            placeholder="Enter first number"
+            required
+        >
+
+        <input
+            type="number"
+            name="number2"
+            placeholder="Enter second number"
+            required
+        >
+
+        <button type="submit">Add</button>
+
+    </form>
+
+    {% if prediction is not none %}
+
+        <h2>Machine Output: {{ prediction }}</h2>
+
+    {% endif %}
+
+</body>
+
+</html>
